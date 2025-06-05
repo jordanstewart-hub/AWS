@@ -1,5 +1,3 @@
 # AWS Curations
 
-![[Cloud Protect Image](https://github.com/user-attachments/assets/6ba92fa6-8a9b-431e-83f2-b4d1a8ca974b)
-e]
-
+![Cloud Protect Image](https://github.com/user-attachments/assets/25df2ea1-3ece-4632-b7b4-bffa8cd7eb71)
