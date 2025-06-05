@@ -4,7 +4,8 @@
 
 
 git add summary.pdf
-git commit -m file:///C:/Users/ccell/OneDrive/Documents/CYBERSECURITY/legendary-aws-compute-eb.pdf
+git commit -m [legendary-aws-compute-eb.pdf](https://github.com/user-attachments/files/20610857/legendary-aws-compute-eb.pdf)
+
 git push
 
 
