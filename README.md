@@ -5,7 +5,7 @@
 
 ## 📄 Project Report
 
-[View PDF Report][legendary-aws-compute-eb.pdf](https://github.com/user-attachments/files/20610957/legendary-aws-compute-eb.pdf)
+[View PDF Report] [legendary-aws-compute-eb.pdf](https://github.com/user-attachments/files/20610957/legendary-aws-compute-eb.pdf)
 
 
 
