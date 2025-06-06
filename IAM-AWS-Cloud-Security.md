@@ -114,11 +114,7 @@ The development instance was successfully stopped while the production instance 
 
 ![Image](http://learn.nextwork.org/authentic_azure_zealous_melon/uploads/aws-security-iam_1811801c)
 
----
 
-## The IAM Policy Simulator
-
-### How I used the simulator
 
 ---
 
