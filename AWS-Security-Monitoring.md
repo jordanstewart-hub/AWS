@@ -24,9 +24,6 @@ Ever wondered how to keep tabs on who’s accessing your most sensitive data in 
 
 In this project I learned how to track and respond to sensitive activity in AWS. Key concepts include setting up CloudTrail to log API events, using CloudWatch to monitor logs, and creating SNS notifications for alerts. I built two alert systems to compare effectiveness, gaining hands-on experience in detecting and responding to unauthorized access or unusual behavior. This project builds essential skills for cloud security and monitoring.
 
-### Project reflection
-
-This project in total took me 1.5 hours to complete.
 
 ---
 
