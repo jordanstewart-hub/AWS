@@ -2,7 +2,6 @@
 
 # Cloud Security with AWS IAM
 
-**Project Link:** [View Project](http://learn.nextwork.org/projects/aws-security-iam)
 
 **Author:** Jordan Stewart  
 **Email:** jordanstewartbusiness@gmail.com
