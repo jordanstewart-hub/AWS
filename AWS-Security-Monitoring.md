@@ -46,12 +46,12 @@ To set up for my project, I created a secret called TopSecretInfo that contains 
 AWS CloudTrail is a monitoring service - think of it as an activity recorder throughout your AWS account. It documents every action taken, like who did what, when they did it, and where they did it from.
 
 This continuous recording is super valuable for security (spotting unusual activity), troubleshooting (figuring out what changed when something breaks), and meeting compliance requirements (proving you're following the rules). In this project, I'm using it to keep an eye on who's accessing our secret.
+
 💡 What is a trail?
 A trail tells CloudTrail exactly what activity to record and where to save those recordings. When you create a trail, you're essentially saying "Hey CloudTrail, please keep track of all xyz activities and store the data in this specific location."
 
 
-
-AWS CloudTrail records three main types of events:
+## AWS CloudTrail records three main types of events:
 
 Management Events – Also called control plane operations, these log actions like creating or deleting resources (e.g., launching EC2, updating IAM policies).
 
