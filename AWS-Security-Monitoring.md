@@ -151,7 +151,7 @@ I initially didn't receive because the CloudWatch alarm wasn't configured to the
 
 ## Success!
 
-To validate that my monitoring system worked correctly I adjusted my alarm state settings correctly to notify me accordingly. As previously shown my system did in fact notify me via email that my secret was being accessed. 
+To validate that my monitoring system worked correctly I adjusted my alarm state settings correctly to notify me accordingly. As shown below my system did in fact notify me via email that my secret was being accessed. 
 
 ![Image](http://learn.nextwork.org/authentic_azure_zealous_melon/uploads/aws-security-monitoring_ageraergearge)
 
@@ -170,4 +170,3 @@ Recap: CloudTrail typically batches events over a period (usually 5-15 minutes) 
 ---
 
 ---
-onitorAWS.md…]()
