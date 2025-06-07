@@ -19,9 +19,6 @@ Today, I'll be using the AWS IAM service to control who is authenticated (signed
 
 In this project I learned to secure AWS using IAM by creating users, groups, and policies, tagging EC2 instances, applying tag-based access controls, and customizing sign-in URLs with account aliases.
 
-### Project reflection
-
-This project was pretty simple and not too difficult. It took me 35 minutes to complete.
 
 ---
 
