@@ -1,6 +1,8 @@
 
 
 # Cloud Security with AWS IAM
+![IAM Cloud Image](https://github.com/user-attachments/assets/4e8ffe0c-cfcc-476a-a1e8-81a64e7bacf3)
+
 
 
 **Author:** Jordan Stewart  
