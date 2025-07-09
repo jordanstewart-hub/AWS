@@ -1,15 +1,13 @@
-[aws-kms-encrypt-project.md](https://github.com/user-attachments/files/21133404/aws-kms-encrypt-project.md)[Uploading aws-km<img src="https://cdn.prod.website-files.com/677c400686e724409a5a7409/6790ad949cf622dc8dcd9fe4_nextwork-logo-leather.svg" alt="NextWork" width="300" />
 
 # Encrypt Data with AWS KMS
-
-**Project Link:** [View Project](http://learn.nextwork.org/projects/aws-security-kms)
 
 **Author:** Jordan Stewart  
 **Email:** jordanstewartbusiness@gmail.com
 
 ---
 
-![Image](http://learn.nextwork.org/authentic_azure_zealous_melon/uploads/aws-security-kms_w0x1y2z3)
+![Image](![Screenshot 2025-07-08 191133](https://github.com/user-attachments/assets/649987ff-4149-4bb3-93c0-deb3b9f2ae51)
+)
 
 ---
 
