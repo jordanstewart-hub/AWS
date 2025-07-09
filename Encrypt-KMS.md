@@ -31,17 +31,19 @@ During this project I am going to:
 
 During this project I learned key AWS services and concepts related to data protection. These included:
 
--AWS Key Management Service (KMS) for creating and managing encryption keys
+• AWS Key Management Service (KMS) for creating and managing encryption keys
 
--Customer Master Keys (CMKs) for encrypting and decrypting data securely
+• Customer Master Keys (CMKs) for encrypting and decrypting data securely
 
--Envelope encryption, which combines KMS with data keys for efficient encryption
+• Envelope encryption, which combines KMS with data keys for efficient encryption
 
--IAM and key policies for managing access control to encryption keys
+• IAM and key policies for managing access control to encryption keys
 
--Integration of KMS with other services like S3, EC2, or Lambda to secure data at rest and in transit
+• Integration of KMS with other services like S3, EC2, or Lambda to secure data at rest and in transit
 
-Overall, the project strengthened my understanding of securing sensitive information using AWS-native encryption solutions.
+## Overall, the project strengthened my understanding of securing sensitive information using AWS-native encryption solutions.
+
+---
 
 
 ## Encryption and KMS
@@ -94,30 +96,29 @@ Transparent data encryption makes sure that your data is secure at rest, yet sti
 
 These are the steps I took to set up an IAM User: 
 
--Open the IAM console.
+• Open the IAM console.
 
--Select Users in the left navigation pane.
+• Select Users in the left navigation pane.
 
--Select Create user.
+• Select Create user.
 
--Enter a username, such as "project-kms-user".
+• Enter a username, such as "project-kms-user".
 
--Check Provide user access to the AWS Management Console - optional. This will let us log in as the test user and see the KMS key's effect later.
+• Check Provide user access to the AWS Management Console - optional. This will let us log in as the test user and see the KMS key's effect later.
 
--Uncheck Users must create a new password at next sign-in,  to save ourselves time when we log in as the test user.
+• Uncheck Users must create a new password at next sign-in,  to save ourselves time when we log in as the test user.
 
--Select Next.
+• Select Next.
 
--Select Attach existing policies directly.
+• Select Attach existing policies directly.
 
--Add AmazonDynamoDBFullAccess as a permission policy.
+• Add AmazonDynamoDBFullAccess as a permission policy.
 
--Select Next.
+• Select Next.
 
--Select Create user.
+• Select Create user.
 
--Make sure to select Download .csv file to save a backup of the user's login details. You won't get this option again once you click out of this page
-
+• Make sure to select Download .csv file to save a backup of the user's login details. You won't get this option again once you click out of this page
 
 
 
@@ -125,36 +126,35 @@ When I checked my DynamoDB table I received a messaged saying "access denied".
 💡 Why is my access denied?
 The new IAM user I logged in as (project-kms-user) does not have the permission to decrypt the data.
 
-Since the DynamoDB table is encrypted with a specific AWS KMS key, and your user does not have permission to use this key, the system prevents access for data security.
+Since the DynamoDB table is encrypted with a specific AWS KMS key, and the new test user does not have permission to use this key, the system prevents access for data security.
 
 ![Image](http://learn.nextwork.org/authentic_azure_zealous_melon/uploads/aws-security-kms_w0x1y2z3)
 
 ---
 
-## EXTRA: Granting Access
+## Granting Access
 
 These are the steps I took to grant the test user permission to use the key:
 
--Head back to the window with IAM Admin User logged in.
+• Head back to the window with IAM Admin User logged in.
 
--Head back to the Key Management Service console.
+• Head back to the Key Management Service console.
 
--Modify the Key Policy
+• Modify the Key Policy
 
--In the KMS dashboard, select Customer-managed keys from the left hand sidebar.
+• In the KMS dashboard, select Customer-managed keys from the left hand sidebar.
 
--Select project-kms-key.
+• Select project-kms-key.
 
--Scroll down the Key policy tab, and select Add next to Key users.
+• Scroll down the Key policy tab, and select Add next to Key users.
 
--Add project-kms-user as a test user of the key.
+• Add project-kms-user as a test user of the key.
 
--Select Add.
+• Select Add.
 
--Scroll back up to the Key policy section and select Switch to policy view
+• Scroll back up to the Key policy section and select Switch to policy view
 
--Scroll down until you can see the policy section for "Allow use of the key" and in that section the user "project-kms-user" was listed.
-
+• Scroll down until you can see the policy section for "Allow use of the key" and in that section the user "project-kms-user" was listed.
 
 
 I logged in with the test user's credentials after adding permisson to use the key for the test user via admin account. Once I was logged in with the test user I was then allowed to access the database's items.
@@ -167,5 +167,3 @@ Other access controls, like security groups or permission policies, control acce
 
 ---
 
----
-s-encrypt-project.md…]()
