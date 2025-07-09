@@ -43,26 +43,10 @@ During this project I learned key AWS services and concepts related to data prot
 
 Overall, the project strengthened my understanding of securing sensitive information using AWS-native encryption solutions.
 
-### Project reflection
-
-45 minutes
-
-YEs
-
----
 
 ## Encryption and KMS
 
 Encryption is the process of converting readable data (plaintext) into an unreadable format (ciphertext) using an algorithm and an encryption key. This ensures that only authorized parties with the correct key can access or decrypt the information, helping protect data confidentiality and security.
-
-
-
-
-
-
-
-
-
 
 💡 What is AWS KMS?
 AWS Key Management Service (KMS) is a secure vault for your encryption keys. You use KMS to create, manage, and use encryption keys that protect the data in your AWS resources.
