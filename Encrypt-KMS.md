@@ -21,9 +21,9 @@ During this project I am going to:
 
 🗄️ Encrypt a DynamoDB database with a KMS key.
 
-➕ Add and retrieve data from your database to test your encryption.
+➕ Add and retrieve data from my database to test my encryption.
 
-🕵️‍♀️ Observe how AWS stops unauthorized access to your data.
+🕵️‍♀️ Observe how AWS stops unauthorized access to data.
 
 💎 Give a user encryption access.
 
