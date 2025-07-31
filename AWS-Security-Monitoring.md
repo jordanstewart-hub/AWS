@@ -29,8 +29,8 @@ In this project I learned how to track and respond to sensitive activity in AWS.
 
 ## Create a Secret
 
-AWS Secrets Manager helps you protect secrets, which are passwords, API keys, credentials and sensitive information. Instead of storing important credentials in your code (yikes!) or sharing them via email (double yikes!), you can tuck them safely away in Secrets Manager.
-In our project, we're just storing a dummy secret, but in real life, this is where you'd keep database passwords, API keys, and other sensitive information that would cause a major headache if they leaked.
+AWS Secrets Manager helps you protect secrets, which are passwords, API keys, credentials and sensitive information. Instead of storing important credentials in your code or sharing them via email, you can tuck them safely away in Secrets Manager.
+In our project, we're just storing a dummy secret, but in real life, this is where you'd keep database passwords, API keys, and other sensitive information that would cause issues if they leaked.
 
 To set up for my project, I created a secret called TopSecretInfo that contains the message "Float like a butterfly"
 
