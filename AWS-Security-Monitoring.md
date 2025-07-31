@@ -53,11 +53,11 @@ A trail tells CloudTrail exactly what activity to record and where to save those
 
 ## AWS CloudTrail records three main types of events:
 
-Management Events – Also called control plane operations, these log actions like creating or deleting resources (e.g., launching EC2, updating IAM policies).
+Management Events: Also called control plane operations, these log actions like creating or deleting resources (e.g., launching EC2, updating IAM policies).
 
-Data Events – Also known as data plane operations, these capture access to the content within resources (e.g., S3 object-level operations, Lambda function invocations). These are not logged by default.
+Data Events: Also known as data plane operations, these capture access to the content within resources (e.g., S3 object-level operations, Lambda function invocations). These are not logged by default.
 
-Insight Events – These detect unusual activity in write management operations, helping identify potential security threats or misconfigurations.
+Insight Events: These detect unusual activity in write management operations, helping identify potential security threats or misconfigurations.
 
 Each API call captured includes details like who made the call, when, from where (IP), and what the response was. These logs are essential for security auditing, operational troubleshooting, and compliance monitoring.
 
