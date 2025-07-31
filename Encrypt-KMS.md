@@ -13,7 +13,7 @@
 
 ## Introducing Today's Project!
 
-Data security is a big deal - it's how companies and engineers protect sensitive information, customer data, or even national secrets. That's why data breaches are often a top concern of company leaders, and they're costing companies an average of $4.5 million to resolve and recover from. How can you protect your data from unauthorized access, while making sure the right people can see and use it? That’s where encryption comes in. Encryption converts data into a secure format that only authorized users can transform back and read. You use encryption keys, which are like digital codes, to encrypt and decrypt the data.
+Data security is a big deal. It's how companies and engineers protect sensitive information, customer data, or even national secrets. That's why data breaches are often a top concern of company leaders. How can you protect your data from unauthorized access, while making sure the right people can see and use it? That’s where encryption comes in. Encryption converts data into a secure format that only authorized users can transform back and read. You use encryption keys, which are like digital codes, to encrypt and decrypt the data.
 
 During this project I am going to:
 
