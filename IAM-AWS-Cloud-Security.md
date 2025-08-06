@@ -68,7 +68,7 @@ Resource – the ARN (Amazon Resource Name) of the AWS resource(s) the policy ap
 
 ![Image](http://learn.nextwork.org/authentic_azure_zealous_melon/uploads/aws-security-iam_1c864649)
 
-- Allow All EC2 Actions for "development" Resources
+✅ Allow All EC2 Actions for "development" Resources
   
 ```json
 {
@@ -82,11 +82,39 @@ Resource – the ARN (Amazon Resource Name) of the AWS resource(s) the policy ap
   }
 }
 ```
+- What it does: Grants all EC2 permissions (ec2:*) but only if the EC2 resource is tagged with Env=development.
+
+- Why it's useful: Ensures users can fully manage only development resources, helping enforce environment-based access control.
 
 
+✅ Allow Describe Actions on All EC2 Resources
+
+```json
+{
+  "Effect": "Allow",
+  "Action": "ec2:Describe*",
+  "Resource": "*"
+}
+```
+- What it does: Allows users to view/read EC2 configurations and resources across all environments.
+
+- Why it's useful: Descriptive actions (like viewing instance status) are generally safe and often necessary for visibility and troubleshooting.
 
 
+❌ Explicitly Deny Tag Creation/Deletion
+```json
+{
+  "Effect": "Deny",
+  "Action": [
+    "ec2:DeleteTags",
+    "ec2:CreateTags"
+  ],
+  "Resource": "*"
+}
+```
+- What it does: Prevents users from adding or removing tags on any EC2 resource, regardless of other permissions.
 
+- Why it's useful: Deny rules override allows. This enforces strict tag integrity so users can't bypass tag-based conditions.
 
 ---
 
