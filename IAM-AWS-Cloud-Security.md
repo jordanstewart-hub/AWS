@@ -34,17 +34,34 @@ In this case, I'll creating a tag called "Env" with a value of "production" or "
 
 ## IAM Policies
 
-An IAM policy is a rule for who can do what with your AWS resources. It's all about giving permissions to IAM users, groups, or roles, saying what they can or can't do on certain resources, and when those rules kick in.
+IAM (Identity and Access Management) policies are used to control who can do what with your AWS resources. Think of them as permission rules that you attach to users, groups, or roles to define:
+
+- Who can access
+
+- What actions they can perform
+
+- Which resources they can interact with
+
+- When/under what conditions those actions are allowed
 
 ### The policy I set up
 
-JSON
+IAM policies are written in JSON and are made up of statements that define access permissions. Each statement must include these key elements:
 
-This policy can have two values - either Allow or Deny - to indicate whether the policy allows or denies a certain action. Deny has priority. Looking at the first statement, "Effect": "Allow" means this statement is trying to allow for an action.
+Effect – either "Allow" or "Deny". This decides if the action is permitted or blocked. (Note: "Deny" always overrides "Allow".)
 
-### When creating a JSON policy, you have to define its Effect, Action and Resource.
+Action – the specific AWS operations (like s3:GetObject or ec2:StartInstances) that the policy covers.
 
-In a JSON policy:  Effect defines whether to allow or deny access, Action specifies the operations permitted, and Resource identifies the AWS resource the policy applies to.
+Resource – the ARN (Amazon Resource Name) of the AWS resource(s) the policy applies to.
+### Key points on IAM policies:
+
+- IAM policies = rules for AWS access
+
+- Must include: Effect, Action, and Resource
+
+- "Deny" takes precedence over "Allow"
+
+- Policies are written in JSON and attached to users, groups, or roles
 
 ---
 
