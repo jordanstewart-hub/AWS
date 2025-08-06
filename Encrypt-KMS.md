@@ -62,16 +62,15 @@ Symmetric encryption use a single encryption key to both lock (encrypt) and unlo
 
 ## Encrypting Data
 
-Amazon DynamoDB is a fully managed NoSQL database service offered by AWS that provides fast and predictable performance at any scale. It is designed for high availability and can handle key-value and document data structures, making it ideal for applications that require low-latency access to large volumes of data. DynamoDB automatically handles data replication, scaling, and backups.
+Amazon DynamoDB is a fully managed NoSQL database service by AWS that delivers fast, scalable performance. It supports key-value and document data types and is ideal for applications needing quick access to large data volumes. It also takes care of replication, scaling, and backups automatically.
 
-💡 What are the different encryption options in DynamoDB?
-DynamoDB offers a few different encryption options:
+🔐 DynamoDB Encryption Options
 
-Owned by Amazon DynamoDB: Amazon DynamoDB fully manages the key, so you have no access or visibility to the key. Great for basic encryption where you don't need any control.
+- DynamoDB-Owned Keys: Fully managed by AWS with no visibility or control which is good for simple needs.
 
-AWS managed key: AWS Key Management Service (KMS) manages the key, so it's not a customer managed key like what we created! You can see the key and its usage, but management is done by AWS.
+- AWS Managed Keys: Managed by AWS KMS; visible to you, but not controlled by you.
 
-Stored in your account, and owned and managed by you: aka a customer managed key (CMK). You create and manage the key in KMS, giving you full control. This is the most secure option and the one we're using in this project.
+- Customer Managed Keys (CMK): You create and control the key in AWS KMS which is the most secure and customizable option (used in this project).
 
 ![Image](http://learn.nextwork.org/authentic_azure_zealous_melon/uploads/aws-security-kms_q8r9s0t1)
 
