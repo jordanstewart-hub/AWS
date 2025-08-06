@@ -44,7 +44,6 @@ IAM (Identity and Access Management) policies are used to control who can do wha
 
 - When/under what conditions those actions are allowed
 
-### The policy I set up
 
 IAM policies are written in JSON and are made up of statements that define access permissions. Each statement must include these key elements:
 
