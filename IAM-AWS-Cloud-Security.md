@@ -69,6 +69,7 @@ Resource – the ARN (Amazon Resource Name) of the AWS resource(s) the policy ap
 ![Image](http://learn.nextwork.org/authentic_azure_zealous_melon/uploads/aws-security-iam_1c864649)
 
 - Allow All EC2 Actions for "development" Resources
+  
  {
   "Effect": "Allow",
   "Action": "ec2:*",
@@ -79,6 +80,7 @@ Resource – the ARN (Amazon Resource Name) of the AWS resource(s) the policy ap
     }
   }
 }
+
 
 
 ---
