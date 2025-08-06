@@ -144,8 +144,7 @@ Attaching a policy to a user group grants all users in that group the permission
 
 You can share a new user's sign-in details by emailing their credentials or downloading and securely sharing the .csv file with their username, password, and login URL.
 
-💡 As a new user, the AWS console will treat you as someone that is starting from 0 again. This is awesome for new team members or new employees. Some of the dashboard panels are showing "Access denied" already.
-
+💡 As a new user, the AWS console will treat you as someone that is starting from 0 again. This is awesome for new team members or new employees.
 
 
 ![Image](http://learn.nextwork.org/authentic_azure_zealous_melon/uploads/aws-security-iam_6f2ab446)
