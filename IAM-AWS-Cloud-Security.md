@@ -26,7 +26,7 @@ In this project I learned to secure AWS using IAM by creating users, groups, and
 
 Tags in EC2 are key-value pairs used to organize, manage, and identify resources. They help with cost tracking, automation, and access control by assigning metadata like owner, purpose, or environment to instances.
 
-In this case, we're creating a tag called "Env" with a value of "production" or "development" to label the instances used in production vs development environments.
+In this case, I'll creating a tag called "Env" with a value of "production" or "development" to label the instances used in production vs development environments.
 
 ![Image](http://learn.nextwork.org/authentic_azure_zealous_melon/uploads/aws-security-iam_2e0e5a5d)
 
