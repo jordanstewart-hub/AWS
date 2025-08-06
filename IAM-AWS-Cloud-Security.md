@@ -1,5 +1,3 @@
-[iam_policy_format.json](https://github.com/user-attachments/files/21620452/iam_policy_format.json)
-
 # Cloud Security with AWS IAM
 ![IAM Cloud Image](https://github.com/user-attachments/assets/4e8ffe0c-cfcc-476a-a1e8-81a64e7bacf3)
 
