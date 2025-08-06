@@ -66,7 +66,7 @@ Amazon DynamoDB is a fully managed NoSQL database service by AWS that delivers f
 
 🔐 DynamoDB Encryption Options
 
-- DynamoDB-Owned Keys: Fully managed by AWS with no visibility or control which is good for simple needs.
+- AWS-Owned Keys: Fully managed by AWS DynamoDB with no visibility or control which is good for simple needs.
 
 - AWS Managed Keys: Managed by AWS KMS; visible to you, but not controlled by you.
 
