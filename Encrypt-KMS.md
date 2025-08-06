@@ -78,14 +78,11 @@ Amazon DynamoDB is a fully managed NoSQL database service by AWS that delivers f
 
 ## Data Visibility
 
-A KMS key manages user permissions using AWS Identity and Access Management (IAM) policies and Key policies. Key policies are attached directly to the KMS key and define who can use or manage it. IAM policies can also grant users permission to use the key, but the key policy must allow access as well. Both policies work together to control access to cryptographic operations like encrypting and decrypting data.
+KMS key access is controlled by two things: Key policies (attached to the key) and IAM policies (attached to users). Both must allow access for a user to perform encryption or decryption.
 
-💡 Why can I see the item?
-Even though the data is encrypted, you as a user have permissions to use the encryption key in KMS.
+💡 Why You Can See Encrypted Items in DynamoDB
 
-DynamoDB is designed to decrypt the data on your behalf. When data is requested by an authorized user (like you) or an authorized application, DynamoDB retrieves the encrypted data, decrypts it with the key, then shows you the decrypted format so you can use it instantly. This security feature is called transparent data encryption.
-
-Transparent data encryption makes sure that your data is secure at rest, yet still accessible to authorized users that have the right permissions.
+Even if data is encrypted, DynamoDB decrypts it for you automatically if you have permission to use the key. This is called transparent data encryption. It keeps your data secure but still usable by authorized users or apps. 
 
 ![Image](http://learn.nextwork.org/authentic_azure_zealous_melon/uploads/aws-security-kms_c0d1e2f3)
 
