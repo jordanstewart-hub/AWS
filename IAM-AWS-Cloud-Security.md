@@ -45,11 +45,11 @@ IAM (Identity and Access Management) policies are used to control who can do wha
 
 IAM policies are written in JSON and are made up of statements that define access permissions. Each statement must include these key elements:
 
-Effect – either "Allow" or "Deny". This decides if the action is permitted or blocked. (Note: "Deny" always overrides "Allow".)
+Effect: either "Allow" or "Deny". This decides if the action is permitted or blocked. (Note: "Deny" always overrides "Allow".)
 
-Action – the specific AWS operations (like s3:GetObject or ec2:StartInstances) that the policy covers.
+Action: the specific AWS operations (like s3:GetObject or ec2:StartInstances) that the policy covers.
 
-Resource – the ARN (Amazon Resource Name) of the AWS resource(s) the policy applies to.
+Resource: the ARN (Amazon Resource Name) of the AWS resource(s) the policy applies to.
 ### Key points on IAM policies:
 
 - IAM policies = rules for AWS access
